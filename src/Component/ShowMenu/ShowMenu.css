@@ -1,0 +1,94 @@
+.outerDiv {
+  padding: 30px;
+  width: fit-content;
+}
+
+.inner {
+  display: flex;
+}
+
+.quan_num {
+  height: 10px;
+  width: 10px;
+}
+
+.main {
+  background-color: rgba(255, 248, 248, 0.851);
+  display: flex;
+  justify-content: center;
+  animation: mymove 4s infinite;
+  border-radius: 10px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 5px;
+}
+
+.quantity {
+  text-align: right;
+}
+
+.addBtn {
+  padding: 5px 15px;
+  border: none;
+  background-color: brown;
+  color: white;
+  margin-top: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: large;
+}
+
+input {
+  margin-top: 18px;
+  width: 35px;
+  height: 20px;
+  margin-left: 10px;
+  font-size: large;
+}
+
+.amount {
+  color: brown;
+}
+
+@keyframes mymove {
+  50% {
+    box-shadow: 4px 4px 20px rgb(3, 3, 3);
+  }
+}
+
+.media {
+  color: black;
+}
+@media only screen and (max-width: 768px) {
+  .outerDiv {
+    width: 98%;
+    padding: 5%;
+  }
+  .media {
+    width: 10%;
+  }
+
+  .addBtn{
+    padding: 5px;
+    font-size: medium;
+    margin-left: -30px;
+    
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .outerDiv {
+    width: 40%;
+    padding: 2%;
+  }
+
+  .addbtn {
+    padding: 0%;
+  }
+  .main {
+    width: 50%;
+  }
+  .media {
+    width: 50%;
+  }
+}

@@ -1,0 +1,31 @@
+.Description{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    margin: 30px;
+    
+}
+.inner-div{
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.581);
+    opacity: 0.9;
+    color: white;
+    animation: mymove 4s infinite;
+}
+
+.headingPara{
+  margin-bottom: 20px;
+}
+
+  @keyframes mymove {
+    50% { 
+      box-shadow:  4px 4px 25px rgb(3, 3, 3);
+    }
+  }
+
+  .para{
+    font-size: larger;
+  }

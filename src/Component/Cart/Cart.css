@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 60%;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.cart_box img {
+  width: 50px;
+  height: 50px;
+}
+.cart_title {
+  display: flex;
+  width: 400px;
+}
+
+.cart_title p {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.cart_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-bottom: 2px solid grey;
+  padding-bottom: 5px;
+  padding: 10px;
+}
+
+.cart_box div:nth-child(2) button {
+  padding: 5px 10px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.cart_box div:nth-child(3) button {
+  padding: 5px 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: brown;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: large;
+  margin: 5px;
+}
+.cart_box div:nth-child(3) button:hover {
+  background-color: rgb(74, 79, 74);
+}
+.cart_box div:nth-child(3) span {
+  background-color: rgb(115, 115, 115);
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.total span:nth-child(1) {
+  font-size: 2rem;
+
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.total span:nth-child(2) {
+  font-size: 2rem;
+
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .cart_box {
+    display: flex;
+  }
+
+  .qbuttons {
+    display: flex;
+    top: -10px;
+    left: -10px;
+    position: relative;
+  }
+
+  .removePrice {
+    top: 5px;
+    left: 30px;
+    position: relative;
+  }
+
+  .price {
+    top: 60px;
+    position: relative;
+    right: 170px;
+    padding: 50px;
+  }
+  .rbtn {
+    margin-top: 5px;
+  }
+  .cart_title {
+    position: relative;
+    top: -50px;
+    left: 80px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .price {
+    position: relative;
+    left: 10px;
+  }
+  .rbtn {
+    position: relative;
+    left: -10px;
+    top: -20px;
+  }
+  .removePrice {
+    top: 28px;
+    left: -60px;
+    position: relative;
+  }
+}
